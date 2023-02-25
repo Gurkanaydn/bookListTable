@@ -1,0 +1,16 @@
+{
+  "books": [
+    {
+      "bookName": "Sefiller",
+      "bookType": "Roman",
+      "writerName": "Victor hugo",
+      "id": 1
+    },
+    {
+      "bookName": "Bir idam mahkumunun son günü",
+      "bookType": "Roman",
+      "writerName": "Victor Hugo",
+      "id": 2
+    }
+  ]
+}
