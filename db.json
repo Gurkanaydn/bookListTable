@@ -9,8 +9,14 @@
     {
       "bookName": "Bir idam mahkumunun son günü",
       "bookType": "Roman",
-      "writerName": "Victor Hugo",
+      "writerName": "Victor hugo",
       "id": 2
+    },
+    {
+      "bookName": "Ateşten gömlek",
+      "bookType": "Roman",
+      "writerName": "Halide Edib Adıvar",
+      "id": 3
     }
   ]
 }

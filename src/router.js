@@ -9,6 +9,10 @@ const routes = [
     {
         path: "/newBook",
         component: () => import("@/views/NewBook"),
+    },
+    {
+        path: "/updateBook/:id",
+        component: () => import("@/views/UpdateBook"),
     }
 ]
 

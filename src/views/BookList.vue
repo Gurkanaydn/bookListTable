@@ -21,9 +21,10 @@
         <tbody>
           <tr v-for="bookList in bookLists" :key="bookList.id">
             <th scope="col">{{ bookList.id }}</th>
-            <th scope="col">{{ bookList.bookName }}</th>
+            <th scope="col" bookName="bookList.bookName">{{ bookList.bookName }}</th>
             <th scope="col">{{ bookList.bookType }}</th>
             <th scope="col">{{ bookList.writerName }}</th>
+            <th scope="col"><button class="btn btn-sm btn-primary" @click="updateBook(bookList.id)">Düzenle</button></th>
             <th scope="col"><button class="btn btn-sm btn-danger" @click="deleteBook(bookList.id)">Sil</button></th>
           </tr>
         </tbody>
@@ -52,7 +53,10 @@ export default {
                 });
             }
         })
-    }
+    },
+    updateBook(bookId){
+      this.$router.push(`/updateBook/${bookId}`);
+    },
   },
   created() {
     axios.get("http://localhost:3000/books").then((bookList) => {
